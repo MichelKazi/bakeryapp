@@ -1,5 +1,4 @@
 require 'sinatra'
-require './product.rb'
 
 # Download the twilio-ruby library from twilio.com/docs/libraries/ruby
 require 'twilio-ruby'
@@ -18,13 +17,4 @@ to: to,
 body: "Hey friend!"
 )
 
-
-get '/' do
-	# render a form
-	erb :home, :layout => :index
-end
-
-post '/' do 
-
-end
 
