@@ -1,6 +1,4 @@
-require 'sinatra'
 
-# Download the twilio-ruby library from twilio.com/docs/libraries/ruby
 require 'twilio-ruby'
 
 account_sid = 'AC21c12814761cbd54749844d23a839ded'
@@ -14,7 +12,7 @@ to = '+15167376277' # Your mobile phone number
 client.messages.create(
 from: from,
 to: to,
-body: "Hey friend!"
+body: "Hey bitchhhh"
 )
 
 

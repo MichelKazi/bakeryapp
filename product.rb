@@ -45,4 +45,11 @@ platcookies = Cookie.new("Platinum Cookies", "If you liked our girl scout cookie
 
 martianmuffin = Muffin.new("Martian Muffin", "Martian Muffin has a sweet and spicy nutty flavor with hints of rich citrus. This muffin is out of this world. If you're not stingy, this is a perfect treat to share with your friends... and then go see a movie or two.")
 blueberrymuffin = Muffin.new("Blueberry Muffin", "These are muffins you'll find at the top of the shelf. That's because they're top shelf muffins 😉. This muffin is a delight to the senses. Recommended for night-time indulgence.")
-lemonpoppymuffin = Muffin.new("Lemon Poppy Seed Muffin", "Another great daytime use muffin, our lemon poppy seed muffin leaves you feeling relaxed, happy, and euphoric. When eaten in the correct amounts, this muffin can relax you without knocking you out."
+lemonpoppymuffin = Muffin.new("Lemon Poppy Seed Muffin", "Another great daytime use muffin, our lemon poppy seed muffin leaves you feeling relaxed, happy, and euphoric. When eaten in the correct amounts, this muffin can relax you without knocking you out.")
+
+
+
+cakes = [weddingcake, birthdaycake, bluecheesecake]
+cookies = [gsc, pinkcookies, platcookies]
+muffins = [martianmuffin, blueberrymuffin, lemonpoppymuffin]
+

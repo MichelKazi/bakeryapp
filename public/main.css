@@ -1,5 +1,23 @@
 body {
 	margin: 0;
 	font-family: sans-serif;
-
 }
+
+nav {
+	background-color: teal;
+	padding: 10% 5%;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 20%);
+	text-align: center;
+}
+
+.productlinks{
+	color: white;
+	text-decoration: none;
+}
+
+#title{
+	text-align: center;
+}
+
