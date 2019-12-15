@@ -5,15 +5,16 @@
 	<link rel="stylesheet" href="main.css">
 	<title>Wake'n'Bake</title>
 </head>
-<body>
-	<nav>
-			<a class="productlinks" href="cookies">Cookies</a>
-			<a class="productlinks" href="cakes">Cakes</a>
-			<a class="productlinks" href="muffins">Muffins</a>
-
-	
-	</nav>
-
-	<%= yield %>
-</body>
+	<body>
+		<div>
+			<div id="nav">
+					<a class="productlinks" href="cookies">Cookies</a>
+					<a class="productlinks" href="cakes">Cakes</a>
+					<a class="productlinks" href="muffins">Muffins</a>
+			</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+		</div>
+	</body>
 </html>

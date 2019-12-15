@@ -1,0 +1,10 @@
+
+<div class="product-container">
+  <% @@muffins.each do |muffin| %>
+    <div class="product">
+      <h3 class="product-title"> <%= muffin.name %></h3>
+      <img src="<%= muffin.img %>" width=275>
+      <p class="product-description"><%= muffin.desc %></p>
+    </div>
+  <% end %>
+</div>

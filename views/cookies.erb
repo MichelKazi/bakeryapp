@@ -1,2 +1,10 @@
-<div class="product-container">
 
+<div class="product-container">
+  <% @@cookies.each do |cookie| %>
+    <div class="product">
+      <h3 class="product-title"> <%= cookie.name %></h3>
+      <img src="<%= cookie.img %>" width=275>
+      <p class="product-description"><%= cookie.desc %></p>
+    </div>
+  <% end %>
+</div>

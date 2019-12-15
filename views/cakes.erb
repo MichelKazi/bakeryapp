@@ -1,0 +1,9 @@
+
+<div class="product-container">
+  <% @@cakes.each do |cake| %>
+    <div class="product">
+      <img src="<%= cake.img %>" width=275>
+      <h3 class="product-title"> <%= cake.name %></h3>
+    </div>
+  <% end %>
+</div>
