@@ -1,11 +1,11 @@
 #nav {
-  background-color: teal;
+  background-color: #b6eccc;
   width: 100%;
-  height: 10vh;
+  height: 7.5vh;
   position: fixed;
   top: 0;
   display: grid;
-  grid-template-columns: repeat(3, 20%);
+  grid-template-columns: repeat(5, 20%);
   text-align: center;
   justify-content: space-between;
   align-content: center; }
@@ -13,22 +13,26 @@
     text-align: center;
     margin: 0 auto;
     width: fit-content;
-    color: #ccc;
+    color: #000;
     text-decoration: none; }
   #nav a:hover {
     color: white; }
 
 body {
+  background-color: #BDECB6;
   margin: 0;
   font-family: sans-serif; }
   body #content {
-    width: 85%;
-    -webkit-box-shadow: 0px 12px 37px 0px #cccccc;
-    -moz-box-shadow: 0px 12px 37px 0px #cccccc;
-    box-shadow: 0px 12px 37px 0px #cccccc;
-    margin: 10vh auto 0; }
+    margin: 7.5vh auto 0; }
 
-#title {
+#splash-photo {
+  width: 100vw;
+  height: 65vh;
+  background-image: url("https://storage.needpix.com/rsynced_images/muffin-1463472507uSa.jpg");
+  background-size: cover;
+  background-position-y: center; }
+
+#home-content #title {
   text-align: center; }
 
 .product-container {
@@ -38,6 +42,7 @@ body {
   .product-container .product {
     text-align: center; }
     .product-container .product .product-title {
-      margin-top: 10px; }
+      margin-top: 5px;
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */

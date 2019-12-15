@@ -1,4 +1,4 @@
-~;x
+require 'sinatra'
 require './product.rb'
 
 # Download the twilio-ruby library from twilio.com/docs/libraries/ruby
