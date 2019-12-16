@@ -1,23 +1,31 @@
-#nav {
+nav {
+
     background-color: rgb(182, 236, 204);
     width: 100%;
     height: 7.5vh;
     position: fixed;
     top: 0;  
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
     text-align: center;
-    justify-content: space-between;
-    align-content: center;
-    a{
-        text-align: center;
-        margin: 0 auto;
-        width: fit-content;
-        color: #000;
-	    text-decoration: none;
+    box-shadow: 0px 4px 20px 0px rgb(68, 68, 68);
+    #controls{
+        height:4.5vh;
     }
-    a:hover{
-        color: white;
+    #nav{
+       width: 100%;
+       a{
+           font-size: small;
+           display: inline-block;
+           padding: 5px 2%;
+           text-align: center;
+           
+           width: fit-content;
+           color: #000;
+           text-decoration: none;
+           transition: .25s;
+       }
+       a:hover{
+           border-bottom: 2px solid #ff5100;
+       }
     }
 }
 body {
@@ -33,10 +41,47 @@ body {
 #splash-photo{
     width: 100vw;
     height: 65vh;
-    background-image: url('https://storage.needpix.com/rsynced_images/muffin-1463472507uSa.jpg');
+    background-image: url('https://images.pexels.com/photos/230743/pexels-photo-230743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     background-position-y: center;
-}
+    position: relative;
+    #splash-text{
+        border-radius: 5px;
+        position: absolute;
+        left:50%;
+        margin-left: -30vw;
+        bottom: 22%;
+        z-index: 2;
+        width: 60vw;
+        height: 32.5vh;
+        color: white;
+        text-align: center;
+        background: rgba(34,34,34,0.75);
+        #btn{
+          display:inline-block;
+          padding:0.35em 1.2em;
+          border:0.1em solid #FFFFFF;
+          margin:0 0.3em 0.3em 0;
+          border-radius:0.12em;
+          box-sizing: border-box;
+          text-decoration:none;
+          font-family:'Roboto',sans-serif;
+          font-weight:300;
+          color:#FFFFFF;
+          text-align:center;
+          transition: all 0.2s;
+        }
+        #btn:hover{
+          color:#000000;
+          background-color:#FFFFFF;
+        }
+
+      }
+        
+    }
+
+
+
 #home-content{
     #title{
         text-align: center;
