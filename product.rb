@@ -1,14 +1,20 @@
 
 class Edible
   attr_accessor :strain, :name, :desc, :mg, :price
-  
+  @@all_products =[]
   def initialize(strain, name, desc, mg, price)
     @strain = strain
     @name = name
     @desc = desc
     @mg = mg
     @price = price
+    
   end
+
+  def Edible.getProducts
+    return @@all_products
+  end
+
 end
 
 class Cake < Edible
@@ -17,6 +23,7 @@ class Cake < Edible
   def initialize(name, desc, img)
     super("Indica", name, desc, 2000, 240)
     @img = img
+    @@all_products.push(self)
   end
 end
 
@@ -26,21 +33,23 @@ class Cookie < Edible
   def initialize(name, desc, img)
     super("Hybrid", name, desc, 250, 20)
     @img = img
+    @@all_products.push(self)
   end
 end
 
 class Muffin < Edible
   attr_accessor :strain, :name, :desc, :mg, :price, :img
-
+  
   def initialize(name, desc, img)
     super("Sativa", name, desc, 500, 40)
     @img = img
+    @@all_products.push(self)
   end
 end
 
 weddingcake = Cake.new("Wedding Cake", "The effects of this cake come in waves and gently rocks your spine from side-to-side. Every bite is pleasantly distracting but not the best for attention-consuming activities. Our wedding cake sharpens the senses and steadies your energy levels without the paranoia.", "https://firekeeperscasino.com/wp-content/uploads/2018/11/White-and-Pink-Tiered-Cake.jpg")
 birthdaycake = Cake.new("Birthday Cake", "Our birthday cake is the perfect way to end your day, with deeply relaxing effects that soothe the body without sedating the mind. This cake is preferred by customers treating pain, anxiety, appetite loss, inflammation, and headaches.", "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16714-birthday-cake-600x600.jpg?ext=.jpg")
-bluecheesecake = Cake.new("Blueberry Cheesecake", "Our blueberry cheesecake will put you in a euphoric, uplifted, happy mood for an approximately an hour and a half. You'll really feel this cake after a good 30 minutes.", "http://images.squarespace-cdn.com/content/v1/56ce19132b8dde1a76761663/1542231644077-WW9UKVJH71BI24ZYM01J/ke17ZwdGBToddI8pDm48kLPswmMOqQZ9-Q6KHLjvbpZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTcpTqfU-ZEsztPyQLxhSSK-PhJjRDDFQG0l3_ZnmWi1QjT9byXZM3ISxo3y1NRptg/60814ad3ae17e328252fa2633141f2a0.jpg")
+bluecheesecake = Cake.new("Blueberry Cheesecake", "Our blueberry cheesecake will put you in a euphoric, uplifted, happy mood for an approximately an hour and a half. You'll really feel this cake after a good 30 minutes.", "https://lmld.org/wp-content/uploads/2016/04/blueberry-cheesecake-9square.jpg")
 
 gsc = Cookie.new("Girl Scout Cookies", "The wonderful effects of our girl scout cookies will last you an entire day. This product is an outstanding choice for customers facing stress, depression, appetite loss, and nausea. If you're looking for a good time, or if you're looking to relax... we recommend just eating half a cookie.", "http://stmedia.stimg.co/ctyp_6601654girl_scout_cookies_200.png?w=500")
 pinkcookies = Cookie.new("Pink Cookies", "You haven't seen \"couch lock\" until you've tried our pink cookies. This batch was specially made for those who like to unwind after a long day and eventually doze off into a deep sleep.", "https://www.seattlegourmetfoods.com/resize/Shared/Images/Merlino/Cookies/Pink-Iced-Sugar-Cookies.jpg?bw=500&bh=500")
@@ -51,7 +60,7 @@ blueberrymuffin = Muffin.new("Blueberry Muffin", "These are muffins you'll find 
 lemonpoppymuffin = Muffin.new("Lemon Poppy Seed Muffin", "Another great daytime use muffin, our lemon poppy seed muffin leaves you feeling relaxed, happy, and euphoric. When eaten in the correct amounts, this muffin can relax you without knocking you out.", "https://detoxinista.com/wp-content/uploads/2017/04/coconut-flour-lemon-poppy-seed-muffins-500x500.jpg")
 
 
-
+@@all_products = Edible.getProducts
 @@cakes = [weddingcake, birthdaycake, bluecheesecake]
 @@cookies = [gsc, pinkcookies, platcookies]
 @@muffins = [martianmuffin, blueberrymuffin, lemonpoppymuffin]

@@ -1,10 +1,13 @@
 
 <div class="product-container">
-  <% @@muffins.each do |muffin| %>
+  <% @@muffins.each do |product| %>
     <div class="product">
-      <h3 class="product-title"> <%= muffin.name %></h3>
-      <img src="<%= muffin.img %>" width=275>
-      <p class="product-description"><%= muffin.desc %></p>
+      <img src="<%= product.img %>" width=275>
+      <h3 class="product-title"> <%= product.name %></h3>
+      <h4 class="product-price"> $<%= product.price %>.00 USD </h4>
+      <p class="product-description"><%= product.desc %></p>
     </div>
   <% end %>
 </div>
+
+

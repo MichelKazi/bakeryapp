@@ -1,17 +1,20 @@
 nav {
-
+    z-index: 3;
     background-color: rgb(182, 236, 204);
     width: 100%;
-    height: 7.5vh;
+    height: 15.75vh;
     position: fixed;
     top: 0;  
     text-align: center;
-    box-shadow: 0px 4px 20px 0px rgb(68, 68, 68);
-    #controls{
-        height:4.5vh;
+    
+    box-shadow: 0px 4px 20px 0px rgba(102,102,102,1);
+    #nav-info{
+        padding: 15px;
+        border-bottom: .5px solid #444;
     }
     #nav{
        width: 100%;
+       
        a{
            font-size: small;
            display: inline-block;
@@ -29,19 +32,19 @@ nav {
     }
 }
 body {
-    background-color: #BDECB6;
+    background-color: #DFF3E3;
 	margin: 0;
     font-family: sans-serif;
     #content{
        
-        margin: 7.5vh auto 0;
+        margin: 15.5vh auto 0;
     }
 }
 
 #splash-photo{
     width: 100vw;
-    height: 65vh;
-    background-image: url('https://images.pexels.com/photos/230743/pexels-photo-230743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1465254596705-1ef61f93878c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80');
     background-size: cover;
     background-position-y: center;
     position: relative;
@@ -56,7 +59,9 @@ body {
         height: 32.5vh;
         color: white;
         text-align: center;
-        background: rgba(34,34,34,0.75);
+        background: rgba(53, 53, 53, 0.603);
+        letter-spacing: 1px;
+        backdrop-filter: blur(5px);
         #btn{
           display:inline-block;
           padding:0.35em 1.2em;
@@ -86,19 +91,57 @@ body {
     #title{
         text-align: center;
     }
+    #homepage-article{
+      margin: 0 auto;
+    }
+    .homepage-content-box{
+      
+      display: inline-grid;
+      height: 40vh;
+      grid-template-columns: auto auto;
+
+      .homepage-picture{
+        width: 50vw;
+        background-color: #333;
+      }
+      .homepage-caption{
+        width: 25vw;
+        background-color: #ccc;
+      }
+    }
 
 }
 
 
 .product-container{
+    margin-top: 15%;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-around;
+    .product:hover{
+      .product-title, .product-price, .product-description, .product-mg{
+         color: #000;
+        }
+    }
     .product{
+      cursor: pointer;
+      transition: .25s;
+      img{
+        border-radius: 5px;
+      }
        text-align: center   ;
-        .product-title{
+        .product-title, .product-price, .product-description, .product-mg{
+            color: #666;
             margin-top: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            transition: .25s;
+        }
+        .product-description{
+          width: 275px;
+          font-size: small;
+          text-align: justify;
+          font-style: italic;
+          
         }
     }
 }
