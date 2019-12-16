@@ -9,7 +9,7 @@ nav {
     
     box-shadow: 0px 4px 20px 0px rgba(102,102,102,1);
     #nav-info{
-        padding: 15px;
+        height:12.5vh;
         border-bottom: .5px solid #444;
     }
     #nav{
@@ -63,6 +63,7 @@ body {
         letter-spacing: 1px;
         backdrop-filter: blur(5px);
         #btn{
+          cursor: pointer;
           display:inline-block;
           padding:0.35em 1.2em;
           border:0.1em solid #FFFFFF;
@@ -92,7 +93,8 @@ body {
         text-align: center;
     }
     #homepage-article{
-      margin: 0 auto;
+      width: 75vw;
+      margin: 15px auto;      
     }
     .homepage-content-box{
       

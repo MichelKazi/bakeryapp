@@ -4,19 +4,27 @@ require './product.rb'
 # Download the twilio-ruby library from twilio.com/docs/libraries/ruby
 require 'twilio-ruby'
 
-account_sid = 'AC21c12814761cbd54749844d23a839ded'
-auth_token = ENV['TWILLIO_AUTH']
 
-client = Twilio::REST::Client.new(account_sid, auth_token)
-
-from = '+13052406736' # Your Twilio number
-to = '+15167376277' # Your mobile phone number
-
-# client.messages.create(
-# from: from,
-# to: to,
-# body: "Hey friend!"
-# )
+post '/' do
+	account_sid = ENV['TWILIO_SID']
+	auth_token = ENV['TWILIO_AUTH']
+	
+	client = Twilio::REST::Client.new(account_sid, auth_token)
+	
+	from = '+13052406736' # Your Twilio number
+	to = '+15167376277' # Your mobile phone number
+	
+	client.messages.create(
+	from: from,
+	to: to,
+	body: "You have signed up for text message alerts from Wake 'n' Bakery!\n You can reply with STOP to discontinue."
+	
+	client.messages.create(
+	from: from,
+	to: to,
+	body: ""
+	)
+end
 
 get '/' do
 	
