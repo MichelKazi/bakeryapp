@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css">
-	<title>Wake'n'Bake</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">	<title>Wake'n'Bake</title>
 </head>
-	<body>
-		
-    <nav>
-      <div id="nav-info">
-	  <div>
-      <img src="/images/wakenbake.png" width=100>
-	  <h1>Wake 'n' Bakery</h1>
-      </div>
-      </div>
-			<div id="nav">
-					<a class="productlinks" href="/">HOME</a>
-					<a class="productlinks" href="cookies">COOKIES</a>
-					<a class="productlinks" href="cakes">CAKES</a>
-					<a class="productlinks" href="muffins">MUFFINS</a>
-					<a class="productlinks" href="404">MERCH</a>
-					<a class="productlinks" href="404">CONTACT US</a>
+
+<body>
+
+	<nav>
+		<div id="nav-info">
+			<div>
+				<img src="/images/wakenbake.png" width=100>
+				<h1>Wake 'n' Bakery</h1>
 			</div>
-    </nav>
+		</div>
+		<div id="nav">
+			<a class="productlinks" href="/">HOME</a>
+			<a class="productlinks" href="cookies">COOKIES</a>
+			<a class="productlinks" href="cakes">CAKES</a>
+			<a class="productlinks" href="muffins">MUFFINS</a>
+			<a class="productlinks" href="404">MERCH</a>
+			<a class="productlinks" href="404">CONTACT US</a>
+		</div>
+	</nav>
 	<div id="content">
 		<%= yield %>
 	</div>
+	
+	<div id="signup-section">
+		<form id="number-form">
+			<h2>Sign up for email Updates.</h2>
+			<input id="phone-number" name="number" type="tel" placeholder="Phone or Email">
+		
+			<input type="submit" value="SIGN ME UP" id="btn">
+		</form>
 	</div>
+	<footer>
+
+	</footer>
 
 	<script src="main.js"></script>
-	</body>
+</body>
+
 </html>

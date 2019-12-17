@@ -20,7 +20,7 @@ post '/text' do
 	client.messages.create(
 	from: from,
 	to: to,
-	body: "Hi #{params['user_name']}!\nYou have signed up for text message alerts from Wake 'n' Bakery!\nYou can reply with STOP to discontinue."
+	body: "Hi!\nYou have signed up for text message alerts from Wake 'n' Bakery!\nYou can reply with STOP to discontinue."
 	)
 	
 end
@@ -30,7 +30,7 @@ post '/email' do
   from = Email.new(email: 'test@example.com')
   subject = 'Wake \'n\' Bakery Mailing List'
   to = Email.new(email: params['user_email'])
-  content = Content.new(type: 'text/plain', value: "Hey #{params['user_name']}, Thanks for signing up for email alerts from Wake 'n' Bakery")
+  content = Content.new(type: 'text/plain', value: "Thanks for signing up for email alerts from Wake 'n' Bakery")
   mail = SendGrid::Mail.new(from, subject, to, content)
   # puts JSON.pretty_generate(mail.to_json)
   puts mail.to_json

@@ -2,19 +2,30 @@
 <div id="home-content">
 	<div id="splash-photo">
 		<div id="splash-text">
-			
-			<div id="solicit-phone-number">
-				<h1>HEY THERE... </h1>
-				<h2>WE HEARD YOU WERE LOOKING FOR GOOD PRICES</h2>
-				<form id="number-form">
-					<input autocomplete="off" id="name-input"name="name" type="text" placeholder="Name">
-					
-					<input id="phone-number"name="number" type="tel" placeholder="Phone or Email">
-					
-					<input type="submit" value="SIGN ME UP" id="btn">
-				</form>
-			</div>
+		
 		</div>
+	</div>
+
+
+	<div id="featured">
+		<h1>FEATURED PRODUCTS</h1>
+		<div class="product-container">
+			<% @@all_products.sample(3).each do |product| %>
+			<div class="product">
+				<img src="<%= product.img %>" width=275>
+				<h3 class="product-title"> <%= product.name %></h3>
+				<h5 class="product-mg"> <%= product.mg %>mg </h4>
+					<h4 class="product-price"> $<%= product.price %>.00 USD </h4>
+					<p class="product-description"><%= product.desc %></p>
+			</div>
+			<% end %>
+		</div>
+	</div>
+
+	<div id="aboutus">
+		<h2>Stay a while... Your budman doesn't need to know</h2>
+		<h4>Our ethically sourced, potent ingredients are guaranteed to top the quality and taste of whatever you find at your local dispensary.</h4>
+		<div id="thc-oil"></div>
 	</div>
 	
 
