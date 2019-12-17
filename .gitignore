@@ -1,6 +1,14 @@
 reated by https://www.gitignore.io/api/vim,ruby
 # Edit at https://www.gitignore.io/?templates=vim,ruby
 
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+
 ### Ruby ###
 *.gem
 *.rbc
