@@ -96,7 +96,7 @@ a{
 }
 
 body {
-    background-color:#fff;
+    background-color:#fff9c4;
 	margin: 0;
     font-family: 'Roboto Mono', 'sans-serif';
     #content{
@@ -223,9 +223,8 @@ body {
   h1{
     padding: 3%;
   }
-  
   text-align: center;
-  height: 27.5vh;
+  height: 18.5vh;
   width: 100%;
 
 }
@@ -263,6 +262,7 @@ body {
 }
 
 #signup-section{
+  background-color: #ffffe2;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding: 25px;
@@ -305,7 +305,7 @@ body {
 }
 
 footer {
-  background-color: yellow;
+  background-color: #fcfa9b;
   font-size: 66%;
   width: 100%;
   text-align: right;
