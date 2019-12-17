@@ -31,6 +31,24 @@ body {
   body #content {
     margin: 15.5vh auto 0; }
 
+#splash-photo #splash-text #number-form #btn, #splash-photo #splash-text #number-form #dismiss-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.17em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background: #2b2b2b63;
+  text-align: center;
+  transition: all 0.2s; }
+
 #splash-photo {
   width: 100vw;
   height: 80vh;
@@ -52,23 +70,37 @@ body {
     background: rgba(53, 53, 53, 0.603);
     letter-spacing: 1px;
     backdrop-filter: blur(5px); }
-    #splash-photo #splash-text #btn {
-      cursor: pointer;
-      display: inline-block;
+    #splash-photo #splash-text #number-form input {
       padding: 0.35em 1.2em;
       border: 0.1em solid #FFFFFF;
       margin: 0 0.3em 0.3em 0;
       border-radius: 0.12em;
       box-sizing: border-box;
       text-decoration: none;
+      background: none;
       font-family: 'Roboto',sans-serif;
+      font-size: 1.25em;
       font-weight: 300;
-      color: #FFFFFF;
-      text-align: center;
-      transition: all 0.2s; }
-    #splash-photo #splash-text #btn:hover {
+      letter-spacing: 1px;
+      color: #fff; }
+    #splash-photo #splash-text #number-form ::placeholder {
+      color: #fff;
+      font-size: 1.25em;
+      font-weight: 300;
+      letter-spacing: 1px; }
+    #splash-photo #splash-text #number-form #btn {
+      color: #fff;
+      border-color: #00b63d; }
+    #splash-photo #splash-text #number-form #btn:hover {
+      color: #000;
+      font-weight: 600;
+      background-color: #00b63d; }
+    #splash-photo #splash-text #number-form #dismiss-btn {
+      border-color: #00b63d; }
+    #splash-photo #splash-text #number-form #dismiss-btn:hover {
+      font-weight: 600;
       color: #000000;
-      background-color: #FFFFFF; }
+      background-color: #00b63d; }
 
 #home-content #title {
   text-align: center; }

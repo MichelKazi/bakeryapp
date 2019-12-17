@@ -20,6 +20,9 @@ GEM
     rack (2.0.7)
     rack-protection (2.0.7)
       rack
+    ruby_http_client (3.3.0)
+    sendgrid-ruby (6.0.0)
+      ruby_http_client (~> 3.3.0)
     sinatra (2.0.7)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -37,6 +40,7 @@ PLATFORMS
 DEPENDENCIES
   curb (~> 0.9.10)!
   httparty (~> 0.17.1)!
+  sendgrid-ruby!
   sinatra (~> 2.0, >= 2.0.7)!
   twilio-ruby (~> 5.30.0)!
 
