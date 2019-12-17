@@ -170,6 +170,7 @@ body {
       margin: 0; }
 
 .category-title {
+  margin-top: 15%;
   text-align: center;
   height: 18.5vh;
   width: 100%; }
