@@ -63,6 +63,21 @@ body {
   transition: all 0.2s;
 }
 
+%input{
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  background: none;
+  font-family:'Roboto',sans-serif;
+  font-size: 1.25em;
+  font-weight:300;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
 #splash-photo{
     width: 100vw;
     height: 80vh;
@@ -84,23 +99,12 @@ body {
         background: rgba(53, 53, 53, 0.603);
         letter-spacing: 1px;
         backdrop-filter: blur(5px);
-
+        transition: .5s;
 
 
         #number-form{
           input{
-            padding:0.35em 1.2em;
-            border:0.1em solid #FFFFFF;
-            margin:0 0.3em 0.3em 0;
-            border-radius:0.12em;
-            box-sizing: border-box;
-            text-decoration:none;
-            background: none;
-            font-family:'Roboto',sans-serif;
-            font-size: 1.25em;
-            font-weight:300;
-            letter-spacing: 1px;
-            color: #fff;
+            @extend %input;
           }
 
           ::placeholder{
@@ -148,17 +152,43 @@ body {
     .homepage-content-box{
       
       display: inline-grid;
-      height: 40vh;
+      vertical-align: bottom;
+      height: 60vh;
       grid-template-columns: auto auto;
 
       .homepage-picture{
         width: 50vw;
-        background-color: #333;
+        background-size: 25%;
+        background-position-y: center;
+        overflow: hidden;
+        img{
+          width: 50vw;
+        }
       }
       .homepage-caption{
         width: 25vw;
         background-color: #ccc;
+        text-align: justify;
+        text-decoration: none;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 1.2em;
+        h1{
+          text-align: center;
+        }
       }
+      // #homepage-cake{
+      //   background: url('https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      // }
+
+      // #homepage-muffin{
+      //   background: url('https://images.pexels.com/photos/1853008/pexels-photo-1853008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      // }
+      // #homepage-cookie{
+      //   background: url('https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      // }
+
+
     }
 
 }
